@@ -1,10 +1,12 @@
-﻿{
+{
   "buildOptions": {
     "emitEntryPoint": true,
-    "preserveCompilationContext": true
+    "preserveCompilationContext": true,
+    "optimize": true
   },
   "dependencies": {
     "BundlerMinifier.Core": "2.2.281",
+    "ICSharpCode.Decompiler": "2.3.1",
     "Microsoft.AspNetCore.Diagnostics": "1.1.0-alpha1-22167",
     "Microsoft.AspNetCore.Mvc": "1.1.0-alpha1-22167",
     "Microsoft.AspNetCore.Razor.Tools": {
@@ -27,13 +29,16 @@
     "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.1.0-alpha1-22167",
     "Mono.Cecil": "0.10.0-beta1-v2",
     "Mono.Reflection": "1.1.0",
+    "System.Collections": "4.0.11",
     "System.Reflection": "4.1.0",
-    "System.Reflection.Metadata": "1.3.0"
+    "System.Reflection.Metadata": "1.4.1-beta-24227-04",
+    "WebGrease": "1.6.0"
   },
   "frameworks": {
     "netcoreapp1.6": {
       "imports": [
         "dnxcore50",
+        "net2",
         "net4",
         "dotnet5.6",
         "portable-net45+win8"
