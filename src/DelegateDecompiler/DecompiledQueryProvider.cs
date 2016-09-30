@@ -1,5 +1,6 @@
 ﻿namespace DelegateDecompiler
 {
+#if netcoreapp16
 	using System.Diagnostics.CodeAnalysis;
 	using System.Linq;
 	using System.Linq.Expressions;
@@ -35,5 +36,5 @@
 			return _inner.Execute<TResult>(decompiled);
 		}
 	}
-
+#endif
 }

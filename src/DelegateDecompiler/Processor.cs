@@ -1,5 +1,6 @@
 ﻿namespace DelegateDecompiler
 {
+#if netcoreapp16
 	using Mono.Cecil.Cil;
 	using System;
 	using System.Collections;
@@ -1480,5 +1481,5 @@
 
 		static void LdArg(ProcessorState state, int index) => state?.Stack.Push(state?.Args[index]); 
 	}
-
+#endif
 }

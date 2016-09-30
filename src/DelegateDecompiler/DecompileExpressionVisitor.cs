@@ -1,5 +1,6 @@
 ﻿namespace DelegateDecompiler
 {
+#if netcoreapp16
 	using System.Collections.Generic;
 	using System.Diagnostics.CodeAnalysis;
 	using System.Linq;
@@ -59,7 +60,6 @@
 		Expression Decompile(MethodInfo method, Expression instance, IList<Expression> arguments)
 		{
 			var expression = method.Decompile();
-
 			var expressions = new Dictionary<Expression, Expression>();
 			var argIndex = 0;
 			for ( var index = 0; index < expression.Parameters.Count; index++ )
@@ -75,5 +75,5 @@
 			return Visit(new ReplaceExpressionVisitor(expressions).Visit(expression.Body));
 		}
 	}
-
+#endif
 }

@@ -1,7 +1,6 @@
-
-
 namespace DelegateDecompiler
 {
+#if netcoreapp16
 	using System;
 	using System.Collections.Generic;
 	using System.Diagnostics.CodeAnalysis;
@@ -53,5 +52,5 @@ namespace DelegateDecompiler
 			return result;
 		}
 	}
-
+#endif
 }

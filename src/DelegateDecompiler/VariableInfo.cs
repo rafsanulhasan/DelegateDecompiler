@@ -1,6 +1,6 @@
 namespace DelegateDecompiler
 {
-
+#if netcoreapp16
 	using System;
 	using System.Diagnostics.CodeAnalysis;
 
@@ -17,4 +17,5 @@ namespace DelegateDecompiler
 
         public Address Address { get; set; }
     }
+#endif
 }
